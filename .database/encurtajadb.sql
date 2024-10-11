@@ -9,12 +9,12 @@ USE encurtajadb;
 CREATE TABLE redir (
     id INT PRIMARY KEY AUTO_INCREMENT,
     date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    name VARCHAR(127) NOT NULL,
+    name VARCHAR(127)  NOT NULL,
     link TEXT NOT NULL,
-    short VARCHAR(127) NOT NULL,
+    short VARCHAR(127)  NOT NULL,
     expire DATETIME DEFAULT NULL,
     views INT DEFAULT '0',
-    status ENUM('on', 'del')
+    status ENUM('on', 'del')  DEFAULT 'on'
 );
 
 -- REMOVA-ME após executar pela primeira vez
